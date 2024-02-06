@@ -1,0 +1,56 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+.section__todo-list {
+    margin-top: 20px;
+    box-shadow: 0px 0px 16px -4px rgba(0, 0, 0, 0.31);
+    min-height: 300px;
+}
+
+.link {
+    justify-content: space-between;
+}
+
+.todo__type {
+    font-size: 18px;
+}
+
+.todo__delete-btn {
+    color: #fff;
+    border: none;
+    border: 1px solid;
+    font-size: 16px;
+    border-radius: 0 7px 7px 0;
+}
+
+/* CONTACT BOOK  */
+.section__control {
+    box-shadow: 0px 0px 16px -4px rgba(0, 0, 0, 0.31);
+}
+
+.section__contact-book {
+    display: flex;
+    justify-content: space-between;
+}
+
+.contact__book-left {
+    width: 50%;
+}
+
+.contact__text-book {
+    width: 530px;
+    min-height: 230px;
+}
+
+.contact__data-control {
+    width: 500px;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.contact__list-number {
+    border: 1px solid green;
+}

@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Lesson-2</title>
+        <link rel="stylesheet" href="main.css">
+        <link rel="stylesheet"
+            href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">
+    </head>
+    <body>
+
+        <section>
+            <!-- TODO LIST -->
+            <div class="container">
+                <div
+                    class="section__todo-list rounded px-3 border ">
+                    <h1 class="text-center text-primary">Todo List</h1>
+                    <form class="input-group mb-3  js-todo-form">
+                        <input class="form-control js-todo-input" type="text"
+                            placeholder="Enter your name"
+                            aria-label="Enter your name" required>
+                        <button
+                            class="btn btn-outline-secondary bg-primary text-white px-3"
+                            type="submit">Add</button>
+                    </form>
+
+                    <ul class="todo__iteam js-todo-iteam p-0">
+                    </ul>
+                </div>
+            </div>
+
+            <template class="js-todo-template">
+                <li
+                    class="link list-unstyled border d-flex p-0 mb-3  rounded">
+                    <type
+                        class="todo__type p-2 js-todo-type">salom</type>
+                    <button
+                        class="todo__delete-btn js-delete-btn bg-danger p-2">delete</button>
+                </li>
+            </template>
+
+        </section>
+
+        <section>
+            <!-- CAONTACT BOOK -->
+            <div class="container">
+                <div class="section__control border rounded mt-5 p-3 mb-5">
+                    <h2 class="mt-2 mb-4 text-center text-primary">Contact
+                        List</h2>
+                    <div
+                        class="section__contact-book d-flex">
+                        <div
+                            class="contact__book-left border p-3 rounded">
+                            <form class="js-contact-form">
+                                <input
+                                    class="inp__contact-book js-inp-name form-control"
+                                    type="text"
+                                    placeholder="Enter your name"
+                                    aria-label="Enter your name" required>
+
+                                <input
+                                    class="inp__contact-book js-contact-datalis mt-3 form-control"
+                                    list="datalistOptions"
+                                    placeholder="Enter your near" required>
+                                <datalist class="contact__datalisi"
+                                    id="datalistOptions">
+                                    <option value="Family">
+                                        <option value="Relative">
+                                        <option value="Friendes">
+                                            </datalist>
+
+                                            <input
+                                                class="inp__contact-book js-contact-pnumebr form-control mt-3"
+                                                type="tel"
+                                                placeholder="(+998) Phone number"
+                                                aria-label="Phoner number"
+                                                required>
+                                            <button
+                                                class="btn btn-outline-seconda bg-primary text-white border mt-3">Add</button>
+                                        </form>
+                                    </div>
+
+                                    <div class="contact__book-right">
+                                        <ul
+                                            class="contact__text-book js-contact border p-3 m-0 rounded">
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <template class="js-contact-template">
+                            <li
+                                class="contact__data-control js-contact-book rounded p-2 m-2 list-unstyled d-flex border">
+                                <h5
+                                    class="contact__list-name js-contact-name ">sardor</h5>
+                                <type
+                                    class="contact__list-near js-contact-near border rounded p-1">family</type>
+                                <span
+                                    class="contact__list-number js-contact-number p-1 rounded">998927637494</span>
+                                <button
+                                    class="contact__delete-btn ja-contact-delete btn btn-outline-secondary bg-danger text-white">Delete</button>
+                            </li>
+                        </template>
+                    </section>
+
+                    <script src="script.js"></script>
+                </body>
+            </html>
